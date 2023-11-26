@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <title>ToDoApp</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <header>
+        <center><h1>TODO LIST</h1></center>
+        <form id="new-task-form">
+            <input 
+                type="text" 
+                name="new-task-input" 
+                id="new-task-input" 
+                placeholder="What's your new plan" />
+            <input 
+                type="submit"
+                id="new-task-submit" 
+                value="Add Items" />
+            <input 
+                type="button"
+                id="delete-all-tasks"  
+                value="Delete All" />
+        </form>
+    </header>
+    <main>
+        <section class="task-list">
+            <h2>Daily Schedules</h2>
+
+            <div id="tasks">
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
